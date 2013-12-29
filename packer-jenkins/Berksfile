@@ -1,0 +1,11 @@
+site :opscode
+
+cookbook 'apt', '~> 1.10'
+cookbook 'rvm', git: 'git://github.com/fnichol/chef-rvm.git'
+cookbook 'libidn', git: 'git://github.com/froschi/chef-cookbook-libidn.git'
+cookbook 'libssl', git: 'git://github.com/froschi/chef-cookbook-libssl.git'
+
+# see https://github.com/opscode-cookbooks/runit/pull/23
+cookbook 'runit', git: 'git://github.com/noazark/runit.git', ref: '31a6cf67fa'
+cookbook 'wget', git: 'git://github.com/froschi/chef-cookbook-wget.git'
+cookbook 'jenkins', git: 'https://github.com/fnichol/chef-jenkins.git'

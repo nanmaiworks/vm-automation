@@ -1,0 +1,29 @@
+Creates virtual images of centos with jenkins,nexux etc on build using chef,packer and berks.
+
+Pre Requisities
+ 
+  Installation of Packer,Virtual Box ,Berkshelf and Ruby.  
+  Host and guest machines (virtual box) are connected in bridge adapter mode.
+  Basic knowledge on chef. 
+  
+  Reference
+  http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox
+  www.packer.io
+  www.berkshelf.com
+  https://www.virtualbox.org
+  https://learnchef.opscode.com/‎
+  
+Packer-Jenkins
+     
+  Creates image of centos with jenkins installed (master / slave)
+          
+  Commands to exectue
+       
+       berks install --path=vendor-cookbooks
+       
+       (on execution of above command delete the jenkins cookbook inside vendor-cookbooks 
+        and copy the jenkins cookbook from nonopscode-cookbooks)
+        
+       packer build --only = virtualbox jenkins.json      
+   
+    

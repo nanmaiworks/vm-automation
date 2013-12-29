@@ -1,0 +1,76 @@
+{
+  "sources": {
+    "apt": {
+      "locked_version": "1.10.0"
+    },
+    "rvm": {
+      "locked_version": "0.9.1",
+      "git": "git://github.com/fnichol/chef-rvm.git",
+      "ref": "0cd320911c1e568cbf2eeac895a5ef06e5821589"
+    },
+    "libidn": {
+      "locked_version": "0.0.1",
+      "git": "git://github.com/froschi/chef-cookbook-libidn.git",
+      "ref": "c4cdd55cc0529440bbc2e4708588e547173314d3"
+    },
+    "libssl": {
+      "locked_version": "0.0.1",
+      "git": "git://github.com/froschi/chef-cookbook-libssl.git",
+      "ref": "c0ccc7c96f98862c1b2ea62bae3653848a9c3c19"
+    },
+    "runit": {
+      "locked_version": "1.1.0",
+      "git": "git://github.com/noazark/runit.git",
+      "ref": "31a6cf67fa376e89638381ae012bc7c5bc87b1bb"
+    },
+    "wget": {
+      "locked_version": "0.0.1",
+      "git": "git://github.com/froschi/chef-cookbook-wget.git",
+      "ref": "dbebbae59a09ff11f4b0545f768f71168b0d1819"
+    },
+    "jenkins": {
+      "locked_version": "1.2.3",
+      "git": "git://github.com/opscode-cookbooks/jenkins.git",
+      "ref": "ece633c2067620edb80c20160991615e539e06a4"
+    },
+    "java": {
+      "locked_version": "1.16.4"
+    },
+    "windows": {
+      "locked_version": "1.11.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "aws": {
+      "locked_version": "1.0.0"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "yum": {
+      "locked_version": "2.4.2"
+    },
+    "apache2": {
+      "locked_version": "1.8.14"
+    },
+    "nginx": {
+      "locked_version": "2.0.8"
+    },
+    "bluepill": {
+      "locked_version": "2.3.0"
+    },
+    "rsyslog": {
+      "locked_version": "1.9.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.12"
+    },
+    "iptables": {
+      "locked_version": "0.12.0"
+    }
+  }
+}
