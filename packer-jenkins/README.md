@@ -19,6 +19,9 @@ You can choose to build only one type of image by running the following:
 ```
 $  packer build --only = virtualbox jenkins.json      
 
+(on execution of above command delete the jenkins cookbook inside vendor-cookbooks and copy the jenkins cookbook 
+from nonopscode-cookbooks present in the root directory )
+
 ```
 
 At the end of that, you'll have a virtual machine ready to go with Jenkins server installed. 
