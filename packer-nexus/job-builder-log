@@ -1,0 +1,42 @@
+virtualbox: - execute yum -q makecache --disablerepo=* --enablerepo=epel
+    virtualbox: * ruby_block[reload-internal-yum-cache-for-epel] action create
+    virtualbox: - execute the ruby block reload-internal-yum-cache-for-epel
+    virtualbox: Recipe: chef-jenkins-job-builder::default
+    virtualbox: * package[libyaml-devel] action install
+    virtualbox: - install version 0.1.3-1.el6 of package libyaml-devel
+    virtualbox: * python_pip[https://github.com/blackburntech/jpetstore-sample] action install
+    virtualbox: ================================================================================
+    virtualbox: Error executing action `install` on resource 'python_pip[https://github.com/blackburntech/jpetstore-sample]'
+    virtualbox: ================================================================================
+    virtualbox:
+    virtualbox: Mixlib::ShellOut::ShellCommandFailed
+    virtualbox: ------------------------------------
+    virtualbox: Expected process to exit with [0], but received '1'
+    virtualbox: ---- Begin output of /usr/bin/pip install  https://github.com/blackburntech/jpetstore-sample ----
+    virtualbox: STDOUT: Downloading/unpacking https://github.com/blackburntech/jpetstore-sample
+    virtualbox: Cannot unpack file /tmp/pip-cxEycb-unpack/jpetstore-sample (downloaded from /tmp/pip-kfI4qT-build, content-type: text/html; charset=utf-8); cannot detect archive format
+    virtualbox: Cleaning up...
+    virtualbox: Cannot determine archive format of /tmp/pip-kfI4qT-build
+    virtualbox: Storing debug log for failure in /root/.pip/pip.log
+    virtualbox: STDERR:
+    virtualbox: ---- End output of /usr/bin/pip install  https://github.com/blackburntech/jpetstore-sample ----
+    virtualbox: Ran /usr/bin/pip install  https://github.com/blackburntech/jpetstore-sample returned 1
+    virtualbox:
+    virtualbox: Cookbook Trace:
+    virtualbox: ---------------
+    virtualbox: /tmp/packer-chef-solo/cookbooks-0/python/providers/pip.rb:155:in `pip_cmd'
+    virtualbox: /tmp/packer-chef-solo/cookbooks-0/python/providers/pip.rb:139:in `install_package'
+    virtualbox: /tmp/packer-chef-solo/cookbooks-0/python/providers/pip.rb:46:in `block (2 levels) in class_from_file'
+    virtualbox: /tmp/packer-chef-solo/cookbooks-0/python/providers/pip.rb:44:in `block in class_from_file'
+    virtualbox:
+    virtualbox: Resource Declaration:
+    virtualbox: ---------------------
+    virtualbox: # In /tmp/packer-chef-solo/cookbooks-0/chef-jenkins-job-builder/recipes/default.rb
+    virtualbox:
+    virtualbox: 22:   python_pip node['jenkins_job_builder']['repo'] do
+    virtualbox: 23:     action :install
+    virtualbox: 24:   end
+    virtualbox: 25: end
+    virtualbox:
+    virtualbox: Compiled Resource:
+

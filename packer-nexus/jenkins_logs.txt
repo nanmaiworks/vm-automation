@@ -1,0 +1,478 @@
+virtualbox: - create new file /etc/pki/rpm-gpg/RPM-GPG-KEY-jenkins-ci
+    virtualbox: - update content in file /etc/pki/rpm-gpg/RPM-GPG-KEY-jenkins-ci from none to d21585
+    virtualbox: --- /etc/pki/rpm-gpg/RPM-GPG-KEY-jenkins-ci	2013-12-24 17:06:06.669795691 -0800
+    virtualbox: +++ /tmp/chef-rest20131224-1441-15qx8ab	2013-12-24 17:06:12.816804982 -0800
+    virtualbox: @@ -1 +1,113 @@
+    virtualbox: +-----BEGIN PGP PUBLIC KEY BLOCK-----
+    virtualbox: +Version: GnuPG v1.4.9 (GNU/Linux)
+    virtualbox: +
+    virtualbox: +mQGiBEmFQG0RBACXScOxb6BTV6rQE/tcJopAEWsdvmE0jNIRWjDDzB7HovX6Anrq
+    virtualbox: +n7+Vq4spAReSFbBVaYiiOx2cGDymj2dyx2i9NAI/9/cQXJOU+RPdDzHVlO1Edksp
+    virtualbox: +5rKn0cGPWY5sLxRf8s/tO5oyKgwCVgTaB5a8gBHaoGms3nNC4YYf+lqlpwCgjbti
+    virtualbox: +3u1iMIx6Rs+dG0+xw1oi5FUD/2tLJMx7vCUQHhPRupeYFPoD8vWpcbGb5nHfHi4U
+    virtualbox: +8/x4qZspAIwvXtGw0UBHildGpqe9onp22Syadn/7JgMWhHoFw5Ke/rTMlxREL7pa
+    virtualbox: +TiXuagD2G84tjJ66oJP1FigslJzrnG61y85V7THL61OFqDg6IOP4onbsdqHby4VD
+    virtualbox: +zZj9A/9uQxIn5250AGLNpARStAcNPJNJbHOQuv0iF3vnG8uO7/oscB0TYb8/juxr
+    virtualbox: +hs9GdSN0U0BxENR+8KWy5lttpqLMKlKRknQYy34UstQiyFgAQ9Epncu9uIbVDgWt
+    virtualbox: +y7utnqXN033EyYkcWx5EhLAgHkC7wSzeSWABV3JSXN7CeeOif7QiS29oc3VrZSBL
+    virtualbox: +YXdhZ3VjaGkgPGtrQGtvaHN1a2Uub3JnPohjBBMRAgAjAhsDBgsJCAcDAgQVAggD
+    virtualbox: +BBYCAwECHgECF4AFAko/7vYCGQEACgkQm30y8tUFguabhgCgi54IQR4rpJZ/uUHe
+    virtualbox: +ZB879zUWTQwAniQDBO+Zly7Fsvm0Mcvqvl02UzxCtC1Lb2hzdWtlIEthd2FndWNo
+    virtualbox: +aSA8a29oc3VrZS5rYXdhZ3VjaGlAc3VuLmNvbT6IYAQTEQIAIAUCSj/qbQIbAwYL
+    virtualbox: +CQgHAwIEFQIIAwQWAgMBAh4BAheAAAoJEJt9MvLVBYLm38gAoIGR2+TQeJaCeEa8
+    virtualbox: +CQhZYzDoiJkQAJ0cpmD+0VA+leOAr5LEccNVd70Z/dHNy83JARAAAQEAAAAAAAAA
+    virtualbox: +AAAAAAD/2P/gABBKRklGAAEBAQBgAGAAAP/hAGBFeGlmAABJSSoACAAAAAQAMQEC
+    virtualbox: +ABkAAAA+AAAAEFEBAAEAAAABQ5AAEVEEAAEAAAASCwAAElEEAAEAAAASCwAAAAAA
+    virtualbox: +AE1hY3JvbWVkaWEgRmlyZXdvcmtzIDQuMAAA/9sAQwAIBgYHBgUIBwcHCQkICgwU
+    virtualbox: +DQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy
+    virtualbox: +/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+    virtualbox: +MjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgArgCWAwEiAAIRAQMRAf/EAB8AAAEF
+    virtualbox: +AQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQEC
+    virtualbox: +AwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkq
+    virtualbox: +NDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqS
+    virtualbox: +k5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk
+    virtualbox: +5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkK
+    virtualbox: +C//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGx
+    virtualbox: +wQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFla
+    virtualbox: +Y2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2
+    virtualbox: +t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQAC
+    virtualbox: +EQMRAD8A9wEj/wB9vzpfMf8Avt+dRinCpGSeY398/nS72/vH86YKBQBJvb+8fzpd
+    virtualbox: +7f3j+dMFLQA/e394/nS7j6n86ZSimA7cfU07cfU1HnFOFADtx9aXJ9TTKUUxD8n1
+    virtualbox: +pc+9Mp1AC5ozSUtAC0maKKADNFJ2ooAoCnCmilzWZQ6lFJSimAopaQUtAC54rOvN
+    virtualbox: +dsLCTZPPGrdwXAry/wCKHxXfRppND0Mq16Bie5PIi9lHdv5V8/X+rXt/O8tzcyyy
+    virtualbox: +MclnYkk0avYdl1PqPxT8VtH8NwqwzdXEuSkaHoB61wjftCXhlzHosBjHZpSCa8PW
+    virtualbox: +O7uhuAkcDueaaYbhOqMMe1L5lcvWx9U+FPjJ4f8AEU0dpdhtLvXOFWdgY3PoH6fg
+    virtualbox: +cV6MrZGa+EklIOJOPqK9i+G3xem0TytI8QSSXGnHCQXJO57f2Pqn6indrclq+x9G
+    virtualbox: +5pwNVoLiO4hSaGRZIpFDKynIYHuKmBqyB+aWmg0uaAFopKKAFoozRQBQFLSUorMo
+    virtualbox: +UUtJSigB1ZHijWovD/hu+1KZlUQxErnu3YfnWsK8k+Pt60PhaxtAxAnuOQO4UE0P
+    virtualbox: +YaWp8/Xd1LeTz3Mzl5pnLuxPJJNa+i+HDclZZ1yp5C1Q0axa+1BEx8i8mvS7S3WG
+    virtualbox: +NQo6elcWLxDprljuelgsOp+/IgtdCiVFVYx07CnXHhyNgflA/Ct+1BwOKmkVq8xS
+    virtualbox: +m9bnr2S0sec6n4UVo2KKNw6Vx9xby2U3lSAj617NcR5J4zmua1/Q4r+1JVQJU5Ui
+    virtualbox: +uzD4qUXyz2OHFYWM1zR3Ol+CHj0xXX/CKajMTHKd1g7H7r94/oeo9wR3r3tWr4ht
+    virtualbox: +pZtNv4bmElZ7eVZUIOPmU5/pX2dpOpR6tpFnqMQxHdQpMoz03DOK9ePY8OaszUDU
+    virtualbox: ++oFNSg0yUOopKWgAoo6mikBRpwptLWZY4UoptLTELXin7QbD7PoiFv45Gx+Ar2uv
+    virtualbox: +FP2g7dfsejXOfm8x48evGf6UmNbnm3hCBls57sJuYnYg9TXSyW2uIgNpJbs5GWDj
+    virtualbox: +gewrP8EJu0XIHKyNV2+j1txM0MzIQV8oIQN3POSenHTg15VSV6z2+Z7dGNqKt26G
+    virtualbox: +hpeo6rC3lajZxKOgdG6/hW5NcoIC4HOOhrmbJb1IokuZWkfbmUsQQGz2xW5OAbAE
+    virtualbox: +Y3d/es5TtJo6oRbjcx7uXVryXbblIIv723JqN9PuUdLhJ2aQf6xW6OP6VBqS6jcQ
+    virtualbox: +sLS4aOQHCqH2qVx64znP8verWn2d/DKrPOzxbFBWQ5O7HJyOxParv7t7oxcfeasz
+    virtualbox: +z3xBaC01uZV4RxvAr6X+F0rv8NdCMj7iICAfQBjgV87+NYzHr6jHHlA/rX0H8LFa
+    virtualbox: +P4baLu3DMTHDDtvOPwr1sM7xR4mK0m/U7lTUyniqyGp1NbtHOmSUuaaDS1JQuaKS
+    virtualbox: +ikBTpaQUVmUOpabS0xC15f8AF7wxc+IEsJI3VI4Nyrkfxtjn6YH616hWL4ptDd6B
+    virtualbox: +cBTh0+cH0xUVL8j5dzSk0prm2PD/AAnYvp+ltazDbNHM6yD3BrpEiWToOKzPLktr
+    virtualbox: +mRiSwlO7J9atQ3bFsCvGnJSlzM+gpLlXKJcpDAegGT+ZqYgPYAgVnz3DpKW8pJW6
+    virtualbox: +AM2MUranci38vy4gBz/9alGF3dG0ppKzZYs0ilB4BwauOixggVlW9w8sivsWJuhC
+    virtualbox: +nOanmun83bimtNCZPS5g6/osOta3Zq8giRImMjeoyMAe5Oa940SxTStFsbCM/JbQ
+    virtualbox: +JGv0AryTTLRLzXIwwDOWVAvfGecCvZx19q9fAttPyPBzCyatuyyhqZTxVdDU612M
+    virtualbox: +4ESg04GowacDUFjqKQc0UDKlLSUtZFC0UUCmAtMmiSeF4pBlHBVh7U6imI878Y+G
+    virtualbox: +rbTbGC7tFf5WKyFmz1rimZoy2wZJGQBXter2C6lpc9qw++vy/XtXiMoe3upLeTiS
+    virtualbox: +Nipry8XSUJJpaHq4Os5JpvUoC4uJr1rYIkJC7vMuGCgj2rZ/4Ry/aHzvtdltO4Ei
+    virtualbox: +TPTH+NUrhFlUB1yQODVB8RjyRboR6hiAfqM4rCLTPR6aSt8rktzJc2l7HZgRXLOu
+    virtualbox: +4SQPkKPU1fUtu3SHJUc/WqlvGIULKo3kdhgCr+lwfb9ZtLItxLIAx9upp25pKKMq
+    virtualbox: +klFN3PTfDenR2mjWbtEvnsm8sVG4buevXpit1aiUAcAYHapVr6GMVGKij5iUnKTk
+    virtualbox: +ydKnU1ClSikwRIKcD60wU4GpLQ7PpRSUUhlaikpc1kWLRSUUxC5ozSZozTA5Txn8
+    virtualbox: +QtF8DxRDUDLPeTDdFaQAFyucbiTwo+vXsK8huNZHiVJddtbY2/mysfJL7iAD0JwM
+    virtualbox: +1h/F+X7V8RtUKybzEUj5PTCjj8KseD2S304WbzxPJ9/CsDjcM4/DvXLjF+6TXc7M
+    virtualbox: +F/EafY1YNThkVcttccMpqY3trtx8ufeoJbK3acrLECPcUsmj2EUYfyw27kcmvOjY
+    virtualbox: +9NuS6kc+pxp8seWc8Koq7pWox+HLiHWdQSR0gO90jALYxjAzjnmsxbnTbCXMssMK
+    virtualbox: +r6nk/h1rH17xLY3lpJa25dw4wWxgfrW9KnOU04owqziotSZ7r4S8daT4xFwunpcR
+    virtualbox: +S24DPHOoBweMjBOa6pDXzn8JNej0nxdFbSKqwX6/ZtzHG1s5U59yMfjX0SpwcGvc
+    virtualbox: +Wp4MlZltDUoNV42qYGpYIlFOzUYNOBqSx4opBzRSArUtNqrqWqWOj2D32pXcVrap
+    virtualbox: +96WVsDPoO5PsOayNC5TXkWKJpZHVI0GWd2AVR7k9K8Z8R/HTazweHNPBHQXd4Ovu
+    virtualbox: +sY/9mP4V5Trvi7XPETltW1S4uVzkRM2I1+iDCj8qtRYWPfvEXxh8L6GJIrWZ9Vu1
+    virtualbox: +48u1/wBWD7yHj8s15Jr/AMYfFGtyOlvdDS7c5xFZnace7n5j+n0rz1n3Hmmk4zzV
+    virtualbox: +KKFcdNPI7s0jM7sxZmY5LE9ST61CsrI25SQR3BwacWzwRUZX0qiblgaheq25bucH
+    virtualbox: +18w086tqDrta9uCvp5hqng56UDmp5I9iueXcmDsxyzEn1JqROvNQKD7VKCqDJOas
+    virtualbox: +kuRuMgjp711+n/FHxVpyIsWqNPHEAojukWQEe5PP61wvnEj0B4ApykZJJ7UDPfvD
+    virtualbox: +Hxp0+/dLfXbYWMp4E8RLxH6jqv616laXtve26XFrPFPC/KyRsGU/iK+MBICcDitn
+    virtualbox: +QPFWseHbvztMv5YM/eTOUb6qeDRcXKj7CV8ing1434V+NtpezR2niC3W0Y8fa4cm
+    virtualbox: +PP8AtL1H1Ga9atrqG6gSe3mjmhcZSSNgysPYikTZouCiow4xRRYLmRr+tW/h7Qrv
+    virtualbox: +Vbkbo7dCwQHBdugUfU4r5Y8TeKtV8Tak15qlwztk+XEDiOFf7qL2H6nvXr3x01n7
+    virtualbox: +Po2n6SjfNcymaQf7K8D9T+leBzPuT3H8qiC0NHoNeYnvURc4phPNITmrJuLu5pSa
+    virtualbox: +Z3pRyKYhM80oOaaetAoAkzwKTd6Cm5pBQA8EnqTijOSeOKaT2oHSgY7cTTg1Rilp
+    virtualbox: +AS7/AGpc4UA96iHJApXbk0wJ0kOeDXTeGPGer+GbtZNOunWMnLwscxv9V/ya5T7q
+    virtualbox: +D1NOEhQYHU9/Siw0z7A8KeJ7XxToceo2ymNs7JoicmNx1HuOcg0V5j8A9RQnWNKl
+    virtualbox: +lVARHcruOOfut/7LRTViJaPQ5b42agbrx29uGytrAiAehPJ/nXmrNu2H14NdD481
+    virtualbox: +A6j401S6zkPMQPoOP6VzQOcj0OaiGxctxpNA5obqfrQKokSlWkzQDzQAMOaSnN1F
+    virtualbox: +JQAtFFFAAKKKO9AC0UlGaBj0HemjlvrTkOEY03vQIe7YJP4CkTBfn6mkbkA/Wkzg
+    virtualbox: +YHU9aYGtpl7Pau8kEzxMwwShwcUVUtWIU4oqbXLTFv3M0jSkksWJP481SU/Pk1Ym
+    virtualbox: +b7/1FViMY96diWKwy5+tITTm+7mo6BC0DrR2oHWgB7dBTac3SmUALS0lKOtACUua
+    virtualbox: +KKACm0vSk70ASLxF9TSYzznrQf8AVqKTPH40wHHHQfjTM55pTwp9+KQdKALEL7Is
+    virtualbox: ++poph4Cr6Cigdz//2YhgBBMRAgAgBQJKP/cgAhsDBgsJCAcDAgQVAggDBBYCAwEC
+    virtualbox: +HgECF4AACgkQm30y8tUFgua3awCdFQlChLgn/n4tb4jLe1RgxOxHxosAn2Cn2oNh
+    virtualbox: +sZ91wUb4d5JuH88TCupsuQINBEmFQG0QCADqAXWgiis4yi96os3QZmK5809ojjTT
+    virtualbox: +nlICgbztrT55cMVTDBc9SneyRQlC0cS+M1z4Do6lj81sNJdJiBPqTYYA1+exTFvs
+    virtualbox: +5zCxPInDP3hvqXxHTP142XN1hdzt53R7smn8O0wyO+RCBUb44e9NkusvBd5UP3Je
+    virtualbox: +449hnpXJ4WO3cVMFm4ghxs7ERlpAi5NTEsVVdM8dqHbZJtk8gbzdAHH0ybiAXmWy
+    virtualbox: +LFGZDuuKiFAkqm/Wled7id6N+cPx107dwBclwPxzfEYKEqJ1YDDHoDlyfx4012y1
+    virtualbox: +53e5sGyah/IPBYrrLMfG+Wmiwr5nCX0tmwOcyukuE94hbzJCX2wBdbWLAAMGCACz
+    virtualbox: +l3cuM4lGt/wr5liM4gotXpZAopY+EnbLIBuOHFXXR7HnyAgST1jH/AUbafvPjyDh
+    virtualbox: +EkFDyUP14XtHNIAqsN1UpuyYbM90bMPAWXJxrazMsSF+Tv5yIxHiy4cc1pjoqHA2
+    virtualbox: +kwqIGHmTxYzOPOS19ZWQAtevoTE6pCARphY0dzpscCWaXGs/ZqNAhjL96WLYV1Oo
+    virtualbox: +Ut+9mTnOcs6Vuxaxp2wN2S5DK1S9gdIxWEc8wMUPiQe8CYk0OySdORIblMs3bGqD
+    virtualbox: +FoM5HcBAZP1YlXitPH2nIRv0DtOQGMQOCkqUWmQuQAUgKV+YO86lO4S7EhTET/GP
+    virtualbox: +sQb6P7efm/Cs8wbq/wyIiEkEGBECAAkFAkmFQG0CGwwACgkQm30y8tUFgua2mACe
+    virtualbox: +JNBW4snDC4OzjKU6QT386/GA9ssAn3vLzSwn8N1xv5MihWGr5kVzvaE2
+    virtualbox: +=cjdq
+    virtualbox: +-----END PGP PUBLIC KEY BLOCK-----
+    virtualbox: - change mode from '' to '0644'
+    virtualbox: * execute[import-rpm-gpg-key-RPM-GPG-KEY-jenkins-ci] action run
+    virtualbox: - execute rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-jenkins-ci
+    virtualbox: Recipe: jenkins::_server_package
+    virtualbox: * yum_repository[jenkins-ci] action add (up to date)
+    virtualbox: Recipe: <Dynamically Defined Resource>
+    virtualbox: * yum_key[jenkins-ci-key] action add (up to date)
+    virtualbox: * execute[yum-makecache-jenkins-ci] action nothing (skipped due to action :nothing)
+    virtualbox: * ruby_block[reload-internal-yum-cache-for-jenkins-ci] action nothing (skipped due to action :nothing)
+    virtualbox: * template[/etc/yum.repos.d/jenkins-ci.repo] action create
+    virtualbox: - create new file /etc/yum.repos.d/jenkins-ci.repo
+    virtualbox: - update content in file /etc/yum.repos.d/jenkins-ci.repo from none to 065ca3
+    virtualbox: --- /etc/yum.repos.d/jenkins-ci.repo	2013-12-24 17:06:13.276795685 -0800
+    virtualbox: +++ /tmp/chef-rendered-template20131224-1441-123klgf	2013-12-24 17:06:13.280795683 -0800
+    virtualbox: @@ -1 +1,9 @@
+    virtualbox: +# Generated by Chef for localhost
+    virtualbox: +# Local modifications will be overwritten.
+    virtualbox: +[jenkins-ci]
+    virtualbox: +name=
+    virtualbox: +baseurl=http://pkg.jenkins-ci.org/redhat
+    virtualbox: +gpgcheck=1
+    virtualbox: +gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-jenkins-ci
+    virtualbox: +enabled=1
+    virtualbox: - change mode from '' to '0644'
+    virtualbox: * execute[yum-makecache-jenkins-ci] action run
+    virtualbox: - execute yum -q makecache --disablerepo=* --enablerepo=jenkins-ci
+    virtualbox: * ruby_block[reload-internal-yum-cache-for-jenkins-ci] action create
+    virtualbox: - execute the ruby block reload-internal-yum-cache-for-jenkins-ci
+    virtualbox: Recipe: jenkins::_server_package
+    virtualbox: * package[jenkins] action install[2013-12-24T17:23:03-08:00] ERROR: yum -d0 -e0 -y install jenkins-1.544-1.1 exceeded timeout 900
+    virtualbox:
+    virtualbox: - install version 1.544-1.1 of package jenkins
+    virtualbox: * template[/etc/sysconfig/jenkins] action create
+    virtualbox: - update content in file /etc/sysconfig/jenkins from f462d9 to 64a2c6
+    virtualbox: --- /etc/sysconfig/jenkins	2013-12-15 07:31:24.000000000 -0800
+    virtualbox: +++ /tmp/chef-rendered-template20131224-1441-1qc2h59	2013-12-24 17:24:38.516794407 -0800
+    virtualbox: @@ -45,34 +45,7 @@
+    virtualbox: #
+    virtualbox: JENKINS_PORT="8080"
+    virtualbox:
+    virtualbox: -## Type:        string
+    virtualbox: -## Default:     ""
+    virtualbox: -## ServiceRestart: jenkins
+    virtualbox: -#
+    virtualbox: -# IP address Jenkins listens on for HTTP requests.
+    virtualbox: -# Default is all interfaces (0.0.0.0).
+    virtualbox: -#
+    virtualbox: -JENKINS_LISTEN_ADDRESS=""
+    virtualbox: -
+    virtualbox: ## Type:        integer(0:65535)
+    virtualbox: -## Default:     ""
+    virtualbox: -## ServiceRestart: jenkins
+    virtualbox: -#
+    virtualbox: -# HTTPS port Jenkins is listening on.
+    virtualbox: -# Default is disabled.
+    virtualbox: -#
+    virtualbox: -JENKINS_HTTPS_PORT=""
+    virtualbox: -
+    virtualbox: -## Type:        string
+    virtualbox: -## Default:     ""
+    virtualbox: -## ServiceRestart: jenkins
+    virtualbox: -#
+    virtualbox: -# IP address Jenkins listens on for HTTPS requests.
+    virtualbox: -# Default is disabled.
+    virtualbox: -#
+    virtualbox: -JENKINS_HTTPS_LISTEN_ADDRESS=""
+    virtualbox: -
+    virtualbox: -## Type:        integer(0:65535)
+    virtualbox: ## Default:     8009
+    virtualbox: ## ServiceRestart: jenkins
+    virtualbox: #
+    virtualbox: @@ -80,15 +53,6 @@
+    virtualbox: # Set to -1 to disable
+    virtualbox: #
+    virtualbox: JENKINS_AJP_PORT="8009"
+    virtualbox: -
+    virtualbox: -## Type:        string
+    virtualbox: -## Default:     ""
+    virtualbox: -## ServiceRestart: jenkins
+    virtualbox: -#
+    virtualbox: -# IP address Jenkins listens on for Ajp13 requests.
+    virtualbox: -# Default is all interfaces (0.0.0.0).
+    virtualbox: -#
+    virtualbox: -JENKINS_AJP_LISTEN_ADDRESS=""
+    virtualbox:
+    virtualbox: ## Type:        integer(1:9)
+    virtualbox: ## Default:     5
+    virtualbox: - change mode from '0600' to '0644'
+    virtualbox: * service[jenkins] action restart
+    virtualbox: - restart service service[jenkins]
+    virtualbox: Recipe: jenkins::server
+    virtualbox: * ruby_block[block_until_operational] action create
+    virtualbox: - execute the ruby block block_until_operational
+    virtualbox: Recipe: jenkins::_server_package
+    virtualbox: * service[jenkins] action enable (up to date)
+    virtualbox: * service[jenkins] action start (up to date)
+    virtualbox: Recipe: jenkins::server
+    virtualbox: * execute[ssh-keygen -f /var/lib/jenkins/.ssh/id_rsa -N ''] action run
+    virtualbox: - execute ssh-keygen -f /var/lib/jenkins/.ssh/id_rsa -N ''
+    virtualbox: * ruby_block[store_server_ssh_pubkey] action create
+    virtualbox: - execute the ruby block store_server_ssh_pubkey
+    virtualbox: * ruby_block[store_server_ssh_pubkey] action nothing (skipped due to action :nothing)
+    virtualbox: * ruby_block[block_until_operational] action nothing (skipped due to action :nothing)
+    virtualbox: * log[ensure_jenkins_is_running] action write
+    virtualbox: Recipe: jenkins::_server_package
+    virtualbox: * service[jenkins] action start (up to date)
+    virtualbox: Recipe: jenkins::server
+    virtualbox: * ruby_block[block_until_operational] action create
+    virtualbox: - execute the ruby block block_until_operational
+    virtualbox: Recipe: runit::default
+    virtualbox: * service[runit] action nothing (skipped due to action :nothing)
+    virtualbox: * execute[start-runsvdir] action nothing (skipped due to action :nothing)
+    virtualbox: * execute[runit-hup-init] action nothing (skipped due to action :nothing)
+    virtualbox: Recipe: build-essential::rhel
+  
+
+    virtualbox: * package[autoconf] action install
+    virtualbox: - install version 2.63-5.1.el6 of package autoconf
+    virtualbox: * package[bison] action install
+    virtualbox: - install version 2.4.1-5.el6 of package bison
+    virtualbox: * package[flex] action install
+    virtualbox: - install version 2.5.35-8.el6 of package flex
+
+
+    virtualbox: * package[gcc] action install
+    virtualbox: - install version 4.4.7-4.el6 of package gcc
+    virtualbox: * package[gcc-c++] action install
+    virtualbox: - install version 4.4.7-4.el6 of package gcc-c++
+    virtualbox: * package[kernel-devel] action install
+    virtualbox: - install version 2.6.32-431.1.2.0.1.el6 of package kernel-devel
+    virtualbox: * package[make] action install
+    virtualbox: - install version 3.81-20.el6 of package make
+    virtualbox: * package[m4] action install (up to date)
+    virtualbox: Recipe: runit::default
+    virtualbox: * package[rpm-build] action install
+    virtualbox: - install version 4.8.0-37.el6 of package rpm-build
+    virtualbox: * package[rpmdevtools] action install
+    virtualbox: - install version 7.5-2.el6 of package rpmdevtools
+    virtualbox: * package[tar] action install (up to date)
+    virtualbox: * package[gzip] action install (up to date)
+    virtualbox: * package[glibc-static] action install
+    virtualbox: - install version 2.12-1.132.el6 of package glibc-static
+    virtualbox: * cookbook_file[/var/chef/cache/runit-2.1.1.tar.gz] action create
+    virtualbox: - create new file /var/chef/cache/runit-2.1.1.tar.gz
+    virtualbox: - update content in file /var/chef/cache/runit-2.1.1.tar.gz from none to 811eab
+    virtualbox: (new content is binary, diff output suppressed)
+    virtualbox: * bash[rhel_build_install] action run
+    virtualbox: - execute "bash"  "/tmp/chef-script20131224-1441-19vh5bn"
+    virtualbox: * rpm_package[runit-211] action install
+    virtualbox: - install version 2.1.1-6.el6 of package runit-211
+    virtualbox: * bash[rhel_build_install] action nothing (skipped due to action :nothing)
+    virtualbox: * rpm_package[runit-211] action nothing (skipped due to action :nothing)
+    virtualbox: Recipe: jenkins::_node_jnlp
+    virtualbox: * group[jenkins-node] action create
+    virtualbox: - create group[jenkins-node]
+    virtualbox: * user[jenkins-node] action create
+    virtualbox: - create user user[jenkins-node]
+    virtualbox: * directory[/home/jenkins] action create (up to date)
+    virtualbox: * jenkins_node[localhost] action create (up to date)
+    virtualbox: Recipe: <Dynamically Defined Resource>
+    virtualbox: * file[/home/jenkins/manage_localhost.groovy] action delete (up to date)
+    virtualbox: * cookbook_file[/home/jenkins/node_info.groovy] action create
+    virtualbox: - create new file /home/jenkins/node_info.groovy
+    virtualbox: - update content in file /home/jenkins/node_info.groovy from none to 29b70d
+    virtualbox: --- /home/jenkins/node_info.groovy	2013-12-24 17:48:26.522792754 -0800
+    virtualbox: +++ /tmp/.node_info.groovy20131224-1441-3uoa7x	2013-12-24 17:48:26.528792754 -0800
+    virtualbox: @@ -1 +1,91 @@
+    virtualbox: +/*
+    virtualbox: +  Cookbook Name:: jenkins
+    virtualbox: +  File:: node_info
+    virtualbox: +
+    virtualbox: +  Author:: Doug MacEachern <dougm@vmware.com>
+    virtualbox: +  Author:: Fletcher Nichol <fnichol@nichol.ca>
+    virtualbox: +
+    virtualbox: +  Copyright 2010, VMware, Inc.
+    virtualbox: +
+    virtualbox: +  Licensed under the Apache License, Version 2.0 (the "License");
+    virtualbox: +  you may not use this file except in compliance with the License.
+    virtualbox: +  You may obtain a copy of the License at
+    virtualbox: +
+    virtualbox: +      http://www.apache.org/licenses/LICENSE-2.0
+    virtualbox: +
+    virtualbox: +  Unless required by applicable law or agreed to in writing, software
+    virtualbox: +  distributed under the License is distributed on an "AS IS" BASIS,
+    virtualbox: +  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    virtualbox: +  See the License for the specific language governing permissions and
+    virtualbox: +  limitations under the License.
+    virtualbox: +*/
+    virtualbox: +
+    virtualbox: +import jenkins.slaves.*
+    virtualbox: +import jenkins.model.*
+    virtualbox: +import hudson.slaves.*
+    virtualbox: +import hudson.model.*
+    virtualbox: +
+    virtualbox: +def toJSON(node) {
+    virtualbox: +  if (node instanceof Map) {
+    virtualbox: +     return "{" + node.collect { k,v -> "\"${k}\":" + toJSON(v) }.join(", ") + "}"
+    virtualbox: +  }
+    virtualbox: +  else if (node instanceof String) {
+    virtualbox: +     return "\"${node}\""
+    virtualbox: +  }
+    virtualbox: +  else {
+    virtualbox: +     return node
+    virtualbox: +  }
+    virtualbox: +}
+    virtualbox: +
+    virtualbox: +slave = Jenkins.instance.getNode(this.args[0]) as Slave
+    virtualbox: +
+    virtualbox: +if (slave == null) {
+    virtualbox: +  println "{}"
+    virtualbox: +}
+    virtualbox: +else {
+    virtualbox: +  node = [
+    virtualbox: +    "name" : slave.name,
+    virtualbox: +    "description" : slave.nodeDescription,
+    virtualbox: +    "remote_fs" : slave.remoteFS,
+    virtualbox: +    "executors" : slave.numExecutors.toInteger(),
+    virtualbox: +    "mode" : slave.mode.toString(),
+    virtualbox: +    "labels" : slave.labelString,
+    virtualbox: +    "availability" : slave.retentionStrategy.class.name.tokenize('$').get(1),
+    virtualbox: +  ]
+    virtualbox: +
+    virtualbox: +  if ((env = slave.nodeProperties.get(EnvironmentVariablesNodeProperty.class)?.envVars)) {
+    virtualbox: +    node["env"] = env
+    virtualbox: +  }
+    virtualbox: +
+    virtualbox: +  if (slave.retentionStrategy instanceof RetentionStrategy.Demand) {
+    virtualbox: +    retention = slave.retentionStrategy as RetentionStrategy.Demand
+    virtualbox: +    node["in_demand_delay"] = retention.inDemandDelay
+    virtualbox: +    node["idle_delay"] = retention.idleDelay
+    virtualbox: +  }
+    virtualbox: +
+    virtualbox: +  launcher = slave.launcher
+    virtualbox: +  if (launcher instanceof CommandLauncher) {
+    virtualbox: +    node["launcher"] = "command"
+    virtualbox: +    node["command"] = launcher.command
+    virtualbox: +  }
+    virtualbox: +  else if (launcher instanceof JNLPLauncher) {
+    virtualbox: +    node["launcher"] = "jnlp"
+    virtualbox: +    if (jenkins.slaves.JnlpSlaveAgentProtocol.declaredFields.find { it.name == 'SLAVE_SECRET' }) {
+    virtualbox: +      node["secret"] = jenkins.slaves.JnlpSlaveAgentProtocol.SLAVE_SECRET.mac( slave.name )
+    virtualbox: +    }
+    virtualbox: +  }
+    virtualbox: +  else {
+    virtualbox: +    node["launcher"] = "ssh"
+    virtualbox: +    node["host"] = launcher.host
+    virtualbox: +    node["port"] = launcher.port
+    virtualbox: +    node["username"] = launcher.username
+    virtualbox: +    if (launcher.password != null) {
+    virtualbox: +      node["password"] = launcher.password
+    virtualbox: +    }
+    virtualbox: +    node["private_key"] = launcher.privatekey
+    virtualbox: +    node["jvm_options"] = launcher.jvmOptions
+    virtualbox: +  }
+    virtualbox: +
+    virtualbox: +  println toJSON(node)
+    virtualbox: +}
+    virtualbox: * jenkins_cli[groovy node_info.groovy localhost] action run (up to date)
+    virtualbox: * directory[home for jenkins-cli.jar] action create (up to date)
+    virtualbox: * remote_file[/home/jenkins/jenkins-cli.jar] action create
+    virtualbox: - create new file /home/jenkins/jenkins-cli.jar
+    virtualbox: - update content in file /home/jenkins/jenkins-cli.jar from none to 70f8bd
+    virtualbox: (new content is binary, diff output suppressed)
+    virtualbox: * jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy node_info.groovy localhost] action run
+    virtualbox: * jenkins_cli[groovy /home/jenkins/manage_localhost.groovy] action run[2013-12-24T17:48:30-08:00] WARN: Cloning resource attributes for directory[home for jenkins-cli.jar] from prior resource (CHEF-3694)
+    virtualbox: [2013-12-24T17:48:30-08:00] WARN: Previous directory[home for jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:33:in `action_run'
+    virtualbox: [2013-12-24T17:48:30-08:00] WARN: Current  directory[home for jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:33:in `action_run'
+    virtualbox: [2013-12-24T17:48:30-08:00] WARN: Cloning resource attributes for remote_file[/home/jenkins/jenkins-cli.jar] from prior resource (CHEF-3694)
+    virtualbox: [2013-12-24T17:48:30-08:00] WARN: Previous remote_file[/home/jenkins/jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:39:in `action_run'
+    virtualbox: [2013-12-24T17:48:30-08:00] WARN: Current  remote_file[/home/jenkins/jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:39:in `action_run'
+    virtualbox: (up to date)
+    virtualbox: * directory[home for jenkins-cli.jar] action create (up to date)
+    virtualbox: * remote_file[/home/jenkins/jenkins-cli.jar] action create (skipped due to not_if)
+    virtualbox: * jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy /home/jenkins/manage_localhost.groovy] action run
+    virtualbox: * ruby_block[new_resource.updated] action run
+    virtualbox: - execute the ruby block new_resource.updated
+    virtualbox: Recipe: jenkins::_node_jnlp
+    virtualbox: * remote_file[/home/jenkins/slave.jar] action create
+    virtualbox: - create new file /home/jenkins/slave.jar
+    virtualbox: - update content in file /home/jenkins/slave.jar from none to 38d426
+    virtualbox: (new content is binary, diff output suppressed)
+    virtualbox: - change owner from '' to 'jenkins-node'
+    virtualbox: * jenkins_cli[node_info for localhost to get jnlp secret] action run[2013-12-24T17:48:33-08:00] WARN: Cloning resource attributes for directory[home for jenkins-cli.jar] from prior resource (CHEF-3694)
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Previous directory[home for jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:33:in `action_run'
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Current  directory[home for jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:33:in `action_run'
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Cloning resource attributes for remote_file[/home/jenkins/jenkins-cli.jar] from prior resource (CHEF-3694)
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Previous remote_file[/home/jenkins/jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:39:in `action_run'
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Current  remote_file[/home/jenkins/jenkins-cli.jar]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:39:in `action_run'
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Cloning resource attributes for jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy node_info.groovy localhost] from prior resource (CHEF-3694)
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Previous jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy node_info.groovy localhost]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:63:in `action_run'
+    virtualbox: [2013-12-24T17:48:33-08:00] WARN: Current  jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy node_info.groovy localhost]: /tmp/packer-chef-solo/cookbooks-0/jenkins/providers/cli.rb:63:in `action_run'
+    virtualbox:
+    virtualbox: Recipe: <Dynamically Defined Resource>
+    virtualbox: * directory[home for jenkins-cli.jar] action create (up to date)
+    virtualbox: * remote_file[/home/jenkins/jenkins-cli.jar] action create (skipped due to not_if)
+    virtualbox: * jenkins_execute["/usr/lib/jvm/java/bin/java" -jar /home/jenkins/jenkins-cli.jar -s http://localhost:8080 groovy node_info.groovy localhost] action run
+    virtualbox: * service[jenkins-slave] action nothing (skipped due to action :nothing)
+    virtualbox: Recipe: jenkins::_node_jnlp
+    virtualbox: * runit_service[jenkins-slave] action enableRecipe: <Dynamically Defined Resource>
+    virtualbox: * directory[/etc/sv/jenkins-slave] action create
+    virtualbox: - create new directory /etc/sv/jenkins-slave
+    virtualbox: - change mode from '' to '0755'
+    virtualbox: * template[/etc/sv/jenkins-slave/run] action create
+    virtualbox: - create new file /etc/sv/jenkins-slave/run
+    virtualbox: - update content in file /etc/sv/jenkins-slave/run from none to 29085b
+    virtualbox: --- /etc/sv/jenkins-slave/run	2013-12-24 17:48:35.887792743 -0800
+    virtualbox: +++ /tmp/chef-rendered-template20131224-1441-9dng7b	2013-12-24 17:48:35.895792743 -0800
+    virtualbox: @@ -1 +1,9 @@
+    virtualbox: +#!/bin/sh
+    virtualbox: +exec 2>&1
+    virtualbox: +cd /home/jenkins
+    virtualbox: +exec chpst -u jenkins-node \
+    virtualbox: +  java -jar /home/jenkins/slave.jar \
+    virtualbox: +  -jnlpUrl http://localhost:8080/computer/localhost/slave-agent.jnlp \
+    virtualbox: +  -secret 6af2dca0a46efd4343b09e0329f337e550cde5449047115f4c7eae8b09d2cca8 \
+    virtualbox: +
+    virtualbox: - change mode from '' to '0755'
+    virtualbox: * directory[/etc/sv/jenkins-slave/log] action create
+    virtualbox: - create new directory /etc/sv/jenkins-slave/log
+    virtualbox: - change mode from '' to '0755'
+    virtualbox: * directory[/etc/sv/jenkins-slave/log/main] action create
+    virtualbox: - create new directory /etc/sv/jenkins-slave/log/main
+    virtualbox: - change mode from '' to '0755'
+    virtualbox: * template[/etc/sv/jenkins-slave/log/run] action create
+    virtualbox: - create new file /etc/sv/jenkins-slave/log/run
+    virtualbox: - update content in file /etc/sv/jenkins-slave/log/run from none to 74c53a
+    virtualbox: --- /etc/sv/jenkins-slave/log/run	2013-12-24 17:48:35.914792743 -0800
+    virtualbox: +++ /tmp/chef-rendered-template20131224-1441-1vymxsp	2013-12-24 17:48:35.915792743 -0800
+    virtualbox: @@ -1 +1,3 @@
+    virtualbox: +#!/bin/sh
+    virtualbox: +exec chpst -unobody logger -d -p local6.info -t [jenkins-slave]
+    virtualbox: - change mode from '' to '0755'
+    virtualbox: * link[/etc/init.d/jenkins-slave] action create
+    virtualbox: - create symlink at /etc/init.d/jenkins-slave to /sbin/sv
+    virtualbox:
+    virtualbox: - configure service runit_service[jenkins-slave]  * link[/etc/service/jenkins-slave] action create
+    virtualbox: - create symlink at /etc/service/jenkins-slave to /etc/sv/jenkins-slave
+    virtualbox:
+    virtualbox: - enable service runit_service[jenkins-slave]
+    virtualbox: Chef Client finished, 54 resources updated
+==> virtualbox: Gracefully halting virtual machine...
+==> virtualbox: Preparing to export machine...
+    virtualbox: Deleting forwarded port mapping for SSH (host port 4382)
+==> virtualbox: Exporting virtual machine...
+==> virtualbox: Unregistering and deleting virtual machine...
+==> virtualbox: Running post-processor: vagrant
+==> virtualbox (vagrant): Creating Vagrant box for 'virtualbox' provider
+    virtualbox (vagrant): Copying: output-virtualbox/packer-virtualbox-disk1.vmdk
+    virtualbox (vagrant): Copying: output-virtualbox/packer-virtualbox.ovf
+    virtualbox (vagrant): Renaming the OVF to box.ovf...
+    virtualbox (vagrant): Compressing box...
+    virtualbox (vagrant): Compressing: Vagrantfile
+    virtualbox (vagrant): Compressing: box.ovf
+    virtualbox (vagrant): Compressing: metadata.json
+    virtualbox (vagrant): Compressing: packer-virtualbox-disk1.vmdk
+Build 'virtualbox' finished.
+
+==> Builds finished. The artifacts of successful builds are:
+--> virtualbox: VM files in directory: output-virtualbox
+--> virtualbox: 'virtualbox' provider box: packer-centos64_x86_64.virtualbox.box
+

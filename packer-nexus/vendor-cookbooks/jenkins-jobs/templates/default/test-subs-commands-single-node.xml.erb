@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Job that listens for changes to the substructure repository and runs a series of simple bash script tests that verify that subs node commands work properly.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@1.1.23">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name></name>
+        <refspec></refspec>
+        <url><%= @git_root %>/<%= @repo %>.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>**</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <disableSubmodules>false</disableSubmodules>
+    <recursiveSubmodules>false</recursiveSubmodules>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <authorOrCommitter>false</authorOrCommitter>
+    <clean>false</clean>
+    <wipeOutWorkspace>false</wipeOutWorkspace>
+    <pruneBranches>false</pruneBranches>
+    <remotePoll>false</remotePoll>
+    <ignoreNotifyCommit>false</ignoreNotifyCommit>
+    <useShallowClone>false</useShallowClone>
+    <buildChooser class="hudson.plugins.git.util.DefaultBuildChooser"/>
+    <gitTool>Default</gitTool>
+    <submoduleCfg class="list"/>
+    <relativeTargetDir></relativeTargetDir>
+    <reference></reference>
+    <excludedRegions></excludedRegions>
+    <excludedUsers></excludedUsers>
+    <gitConfigName><%= @git_user %></gitConfigName>
+    <gitConfigEmail><%= @git_email %></gitConfigEmail>
+    <skipTag>false</skipTag>
+    <includedRegions></includedRegions>
+    <scmName></scmName>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector">
+    <hudson.triggers.SCMTrigger>
+      <spec>*/15 * * * *</spec>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>SUCCESS=0
+FAILURE=1
+IPMI_USER=root
+IPMI_PASS=root
+NEW_IPMI_PASS=secret
+EXPECTED_NB_OUTPUT=&quot;ipmitool -H 172.16.2.9 -U root -P root chassis bootdev pxe &amp;&amp; ipmitool -H 172.16.2.9 -U root -P root chassis power cycle&quot;
+EXPECTED_CP_OUTPUT=&quot;ipmitool -H 172.16.2.9 -U root -P root user set password 2 secret&quot;
+
+echo &quot;Validating output of subs node power netboot\n&quot;
+NB_OUTPUT=`./subs node --name=c5r1.dal2 power --user=$IPMI_USER --password=$IPMI_PASS --dry-run netboot`
+
+if [[ &quot;$NB_OUTPUT&quot; != &quot;$EXPECTED_NB_OUTPUT&quot; ]]; then
+  echo &quot;Expected $EXPECTED_NB_OUTPUT\nGot: $NB_OUTPUT\nFAIL.\n&quot;
+  return $FAILURE
+else
+  echo &quot;subs node power netboot output OK\n&quot;
+fi
+
+echo &quot;Validating output of subs node power change_password&quot;
+CP_OUTPUT=`./subs node --name=c5r1.dal2 power --user=$IPMI_USER --password=$IPMI_PASS --dry-run change_password --new-password=$NEW_IPMI_PASS`
+
+if [[ &quot;$CP_OUTPUT&quot; != &quot;$EXPECTED_CP_OUTPUT&quot; ]]; then
+  echo &quot;Expected $EXPECTED_CP_OUTPUT\nGot: $CP_OUTPUT\nFAIL.\n&quot;
+  return $FAILURE
+else
+  echo &quot;subs node power change_password output OK\n&quot;
+fi
+return $SUCCESS</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
