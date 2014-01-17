@@ -2,11 +2,11 @@
 
 Note, currently the Jenkins Job is working without nexus. This is a work in progress.
 
-# Packer Template for Centos 6.4 Imagesi with Jenkins
+# Packer Template for Centos 6.4 Imagesi with Jenkins Job
 
 This repository contains a Packer template for building machine images
 that are centos 6.4 basic images in both vmware as well as virtualbox and then uses chef to install Jenkins,Nexus and Maven
-to run Jenkins Jon.
+to run Jenkins Job.
 
 ## Usage
 Make sure all the Pre Requisities are met as mentioned in the root README.md file.
