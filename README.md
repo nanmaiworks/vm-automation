@@ -18,8 +18,8 @@ to run Jenkins Job.
   
 # Reference
 
-http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox
-www.packer.io
-www.berkshelf.com
-https://www.virtualbox.org
-https://learnchef.opscode.com/‎
+http://www.packer.io.
+http://www.berkshelf.com.
+http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox.
+https://www.virtualbox.org.
+https://learnchef.opscode.com.‎
