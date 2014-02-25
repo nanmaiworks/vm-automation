@@ -16,6 +16,16 @@ that are centos 6.4 basic images in both vmware as well as virtualbox and then u
 to run Jenkins Job.
 
   
+# Packer-Jenkins
+
+Installation of Jenkins Packer,Virtual Box ,Berkshelf and Ruby.  
+For more information refer to read-me provided inside packer-jenkins project
+
+# Packer-Nexus-POC
+ 
+POC on pushing multiple time stamped versions of the artifacts into Nexus      
+For more information refer to read-me provided inside packer-nexus project
+
 # Reference
 
 http://www.packer.io.

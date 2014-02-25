@@ -26,4 +26,7 @@ Packer-Jenkins
         
        packer build --only = virtualbox jenkins.json      
    
-    
+Packer-Nexus-POC
+ 
+  POC on pushing multiple time stamped versions of the artifacts into Nexus      
+  For more information refer to read-me provided inside packer-nexus project
